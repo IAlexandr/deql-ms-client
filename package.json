@@ -26,5 +26,58 @@
     "eslint-plugin-react": "^7.7.0",
     "react-app-rewire-less": "^2.1.1",
     "react-app-rewired": "^1.5.0"
+  },
+  "proxy": {
+    "/socket.io/": {
+      "target": "http://localhost:8888/",
+      "ws": true,
+      "xfwd": true
+    },
+    "/graphql": {
+      "target": "http://localhost:8888/",
+      "ws": true,
+      "xfwd": true
+    },
+    "/subscriptions": {
+      "target": "http://localhost:8888/",
+      "ws": true,
+      "xfwd": true
+    },
+    "/voyager": {
+      "target": "http://localhost:8888/",
+      "ws": true,
+      "xfwd": true
+    },
+    "/playground": {
+      "target": "http://localhost:8888/",
+      "ws": true,
+      "xfwd": true
+    },
+    "/api": {
+      "target": "http://localhost:8888/",
+      "ws": true,
+      "xfwd": true
+    },
+    "/static": {
+      "target": "http://localhost:8888/",
+      "ws": true,
+      "xfwd": true
+    },
+    "/upload": {
+      "target": "http://localhost:8888/",
+      "ws": true,
+      "xfwd": true
+    },
+    "/images": {
+      "target": "http://localhost:8888/",
+      "pathRewrite": {
+        "^/images": "/api/static/images"
+      }
+    },
+    "/files": {
+      "target": "http://localhost:5555/",
+      "ws": true,
+      "xfwd": true
+    }
   }
 }

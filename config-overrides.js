@@ -10,8 +10,8 @@ module.exports = function override(config, env) {
     config.devtool = 'nosources-source-map'; //без sourcemap
   }
   config.resolve.alias = {
-    '@': path.resolve(__dirname, './src/'),
-    'deql': path.resolve(__dirname, './../client/'),
+    'deql': path.resolve(__dirname, './src/'),
+    '@': path.resolve(__dirname, './../'),
   };
 
   delete config.resolve.plugins[0];

@@ -1,3 +1,3 @@
 ## deql-ms-client
 
-// TODO
+client-toolkit for deql-ms
